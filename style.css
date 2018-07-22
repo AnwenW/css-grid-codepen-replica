@@ -42,15 +42,22 @@ h6 {
 }
 
 .codepen >* {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 /* /// EDITOR /// */
 
 .code {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 18px 1fr);
   background: #1D1E22;
+  border-top: 1.5px solid black;
+  border-bottom: 1px solid black;
+}
+
+.editor-resizer {
+  background: var(--grey);
+  border-left: 1px solid rgba(255,255,255,0.1);
 }
 
 .editor {
@@ -83,7 +90,7 @@ h6 {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  padding: 5px;
+  padding: 0 5px;
   grid-gap: 5px;
   background: rgba(0,0,0,0.1);
   border-bottom: 1px solid rgba(255,255,255,0.1);
@@ -106,6 +113,7 @@ h6 {
   color: white;
   padding: 10px;
   height: 72px;
+  min-width: 1000px;
 }
 
 .pen__details {
@@ -132,6 +140,7 @@ h6 {
 .preview {
   display: grid;
   grid-template-columns: 1fr;
+  border-top: 18px solid var(--grey);
 }
 
 /* /// BUTTONS /// */
@@ -149,12 +158,13 @@ h6 {
 .button--header {
   padding: 0 16px;
   height: 44px;
+  min-width: 90px;
 }
 
 .button--small {
   padding: 3px 7px;
   font-size: 0.7em;
-  margin: 10px 2px;
+  margin: 8px 2px;
 }
 
 .button--black {
