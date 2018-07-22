@@ -36,16 +36,32 @@ h6 {
   display: grid;
   grid-template-rows: auto 1fr 1fr auto;
   height: 100vh;
+  color: white;
 }
 
 .codepen >* {
   border: 1px solid black;
 }
 
+/* /// EDITOR /// */
+
 .code {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  background: #1D1E22;
 }
+
+.editor__header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 5px;
+  grid-gap: 5px;
+  background: rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* /// PEN HEADER /// */
 
 .pen {
   display: grid;
