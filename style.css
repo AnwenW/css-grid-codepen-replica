@@ -29,7 +29,7 @@ h5,
 h6 {
   font-weight: normal;
   margin: 0;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .codepen {
@@ -101,8 +101,24 @@ h6 {
   padding: 10px;
 }
 
+.pen-by {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  color: #9396A4;
+}
+
+.pen__author {
+  font-size: 0.9rem;
+}
+
+.pen img {
+  border-radius: 3px;
+}
+
 .preview {
   display: grid;
+  grid-template-columns: 1fr;
 }
 
 /* /// BUTTONS /// */
@@ -112,9 +128,14 @@ h6 {
   color: white;
   border: none;
   padding: 10px 16px;
-  border-radius: 2px;
+  border-radius: 3px;
   font-size: 1em;
   position: relative;
+}
+
+.button--header {
+  padding: 0 16px;
+  height: 44px;
 }
 
 .button--small {
