@@ -1,5 +1,7 @@
 :root {
   --grey: #343436;
+  --lightgrey: #9396A4;
+  --lightestgrey: #C5C8D4;
 }
 
 html {
@@ -87,33 +89,44 @@ h6 {
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
+.editor__heading {
+  color: var(--lightestgrey);
+}
+
 /* /// PEN HEADER /// */
 
 .pen {
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-flow: column;
-  align-items: center;
+  /* align-items: center; */
   grid-gap: 10px;
   background: black;
   border-bottom: 5px solid var(--grey);
   color: white;
   padding: 10px;
+  height: 72px;
+}
+
+.pen__details {
+  min-width: 375px;
+  margin-left: 40px;
 }
 
 .pen-by {
   text-transform: uppercase;
   font-size: 0.7rem;
   letter-spacing: 1px;
-  color: #9396A4;
+  color: var(--lightgrey);
 }
 
 .pen__author {
   font-size: 0.9rem;
+  margin: 0;
 }
 
 .pen img {
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
 .preview {
@@ -128,7 +141,7 @@ h6 {
   color: white;
   border: none;
   padding: 10px 16px;
-  border-radius: 3px;
+  border-radius: 2px;
   font-size: 1em;
   position: relative;
 }
@@ -148,7 +161,13 @@ h6 {
   background: black;
 }
 
-.button--dirty:before {
+.button--outline {
+  border: 3px solid var(--grey);
+  border-radius: 2px;
+  background: none;
+}
+
+/* .button--dirty:before {
   background: #ffc600;
   display: block;
   content: '';
@@ -157,7 +176,7 @@ h6 {
   position: absolute;
   left: 3px;
   top: 3px;
-}
+} */
 
 .settings {
   background: var(--grey);
